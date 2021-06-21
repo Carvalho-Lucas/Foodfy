@@ -3,7 +3,8 @@
  @import "https://fonts.gstatic.com";
  @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@700&display=swap');
  :root {
-     --color-purple: #551a8b;
+     --color-purple: #7159c1;
+     --color-green: #50fa7b;
  }
  /*Para zerar espaçamento padrão usa "*" */
  
@@ -42,7 +43,7 @@
      /*Seletor ":" = Também utilizado para fazer estilização de elementos */
      /* "hover" = Quando passar o mouse por cima troca a cor da fonte, (ideia de seletor/trocar de página quando clicar)*/
      /*"transition" = Tempo para trocar a fonte de cor */
-     color: var(--color-purple);
+     color: var(--color-green);
      transition: color 200ms;
  }
  
@@ -55,7 +56,7 @@
  #wrapper img {
      /* Seleciona modificação para IMAGEM na tag id*/
      border-radius: 50%;
-     border: 5px solid var(--color-purple);
+     border: 5px solid var(--color-green);
      margin-bottom: 32px;
      height: 300px;
  }
@@ -82,9 +83,42 @@
  }
  
  #wapper p a {
-     color: var(--color-purple);
+     color: var(--color-green);
  }
  
  #links-footer a {
      text-decoration: underline;
+ }
+ /*======Cards======*/
+ 
+ .cards {
+     max-width: 800px;
+     margin: 0 auto;
+ }
+ 
+ .card {
+     background-color: var(--color-purple);
+ }
+ 
+ .card_image-container img {
+     width: 100%;
+ }
+ 
+ .card_content,
+ .card_info {
+     padding: 24px;
+ }
+ 
+ .card_info {
+     /*Display grid para movimentar no eixo X "Tabelo com minutos " / "Tabela com o Preço"*/
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+ }
+ 
+ .card_price {
+     background-color: var(--color-purple);
+     filter: brightness(90%);
+     padding: 5px 20px;
+     border-radius: 20px;
+     text-align: center;
  }
