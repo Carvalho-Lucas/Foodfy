@@ -82,8 +82,9 @@
      line-height: 34px;
  }
  
- #wapper p a {
+ #wrapper p a {
      color: var(--color-green);
+     text-decoration: none;
  }
  
  #links-footer a {
